@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "zip-cen-op"
+version = "0.1.1"
+authors = [
+    { name = "chen", email = "chen@wepe.dev" },
+]
+description = "A tool to manipulate ZIP file Central Directory encryption flags"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/c9n/zip-cen-op"
+"Bug Tracker" = "https://github.com/c9n/zip-cen-op/issues"
+
+[project.scripts]
+zipcenop = "zip_cen_op.main:main"
